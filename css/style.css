@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(214, 209, 203);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80%;
+  }
+  
+  header {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  
+  nav {
+    background-color: rgb(115, 193, 223);
+    border-radius: 5px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces y la imagen a lo largo del ancho */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center; /* Alinea los enlaces en el centro de cada <li> */
+  }
+  
+  nav li:last-child {
+    flex: 0; /* La imagen no tomará espacio extra */
+    margin-left: auto; /* Empuja la imagen hacia la derecha */
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+ 
+  
+  h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+  }
+  
+  main {
+    background-color: rgb(178, 209, 209);
+    font-size: small;
+    padding: 50px;
+  }
+  
+  main a {
+    color: darkslategrey;
+    text-transform: uppercase;
+  }
+  
+  main p {
+    line-height: 2;
+    text-align: center;
+    margin: 0 200px; /* Usar un margen combinado */
+  }
+  
+  main img {
+    border-radius: 15px;
+  }
+  
+  footer {
+    background-color: lightgoldenrodyellow;
+    font-size: x-small;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+  }
+  
+  .grid img {
+    width: 100%;
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Comentario original del estilo li */
+  /* Se ha eliminado el estilo inline-block ya que se utiliza flexbox para el diseño del nav */
+  
